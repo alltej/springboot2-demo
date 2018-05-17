@@ -1,15 +1,18 @@
-/**
- * @author Allan Tejano
- * 4/24/2018
- */
+### A REST API created with Spring Boot 2.*
 
-#to create image/build/register
-docker build -t demo-rest-latest .
+...A simple REST service(s) to do CRUD, Search, List actions on Employee Data
+...Package it in a Docker container.
+...Use DB (MongoDB, MySQL or H2)
+...Zip the Docker Image with this file.
 
-#to run image
-docker run -d -p 8080:8080 demo-rest-latest
+
+1. to create image/build/register
+`docker build -t demo-rest-latest .`
+
+2. to run image
+`docker run -d -p 8080:8080 demo-rest-latest`
 
 
 #with maven
-mvnw install dockerfile:build
-docker run -d -p 8080:8080 alltej/demo-employees:latest
+`mvnw install dockerfile:build`
+`docker run -d -p 8080:8080 alltej/demo-employees:latest`
