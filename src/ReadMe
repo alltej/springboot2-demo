@@ -1,0 +1,6 @@
+A REST API created with Spring Boot 2.*
+
+- A simple REST service(s) to do CRUD, Search, List actions on Employee Data 
+- Package it in a Docker container.
+- Use DB (MongoDB, MySQL or H2)
+- Zip the Docker Image with this file.

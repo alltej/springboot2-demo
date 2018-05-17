@@ -1,0 +1,15 @@
+/**
+ * @author Allan Tejano
+ * 4/24/2018
+ */
+
+#to create image/build/register
+docker build -t demo-rest-latest .
+
+#to run image
+docker run -d -p 8080:8080 demo-rest-latest
+
+
+#with maven
+mvnw install dockerfile:build
+docker run -d -p 8080:8080 alltej/demo-employees:latest

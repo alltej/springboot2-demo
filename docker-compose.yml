@@ -1,0 +1,11 @@
+version: '2.2'
+services:
+  demorestapi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: alltej/demo-employees:latest
+    ports:
+      - 8080:8080
+    scale: 1
+
